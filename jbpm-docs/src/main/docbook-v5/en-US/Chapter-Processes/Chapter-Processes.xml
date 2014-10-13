@@ -520,7 +520,7 @@ ksession.startProcess("org.jbpm.HelloWorld");</programlisting>
 
         <para>A Signal Event can be used
         to respond to internal or external events during the execution of the process.
-        A Signal Event should have no incoming connections and one outgoing
+        A Signal Event should have no incoming and one outgoing
         connection.  It specifies the type of event that is expected.  Whenever
         that type of event is detected, the node connected to this event node will
         be triggered.  It contains the following properties:</para>

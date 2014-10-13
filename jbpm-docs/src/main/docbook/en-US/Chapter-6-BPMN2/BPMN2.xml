@@ -186,7 +186,7 @@
         <listitem>
           <para>The jBPM Designer is an open-source web-based editor that supports the BPMN 2.0 format.  We have embedded it into
           jbpm console for BPMN 2.0 process visualization and editing.  You could use the Designer (either standalone or
-          integrated) to create / edit BPMN 2.0 processes and then export them to BPMN 2.0 format or save them into
+          integrated) to create / edit BPMN 2.0 processes and then export them to BPMN 2.0 format or save them into a
           repository and import them so they can be executed.</para>
         </listitem>
         <listitem>
@@ -200,7 +200,7 @@
         <listitem>
           <note>
             <para>Drools Eclipse Process editor has been deprecated in favor of BPMN2 Modeler for process modeling.
-            It can still be used for limited number of supported elements but should be faced out as it is not
+            It can still be used for limited number of supported elements but should be phased out as it is not
             being developed any more.</para>
           </note>
           <para>Create a new Process file using the Drools Eclipse plugin wizard and in the last page of the wizard,

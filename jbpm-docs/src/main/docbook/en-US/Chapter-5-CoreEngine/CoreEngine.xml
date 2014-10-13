@@ -563,7 +563,7 @@ ksession.startProcess("org.jbpm.HelloWorld");</programlisting>
 
         <para>A Signal Event can be used
         to respond to internal or external events during the execution of the process.
-        A Signal Event should have one incoming connections and one outgoing
+        A Signal Event should have one incoming and one outgoing
         connection.  It specifies the type of event that is expected.  Whenever
         that type of event is detected, the node connected to this event node will
         be triggered.  It contains the following properties:</para>
@@ -1140,7 +1140,7 @@ kcontext.getKnowledgeRuntime().signalEvent(eventType, data, kcontext.getProcessI
           and one outgoing connection.  There are three types of splits currently supported:
           <itemizedlist>
            <listitem>
-            <para>AND or parallel means that is will wait until <emphasis>all</emphasis> incoming
+            <para>AND or parallel means that it will wait until <emphasis>all</emphasis> incoming
             branches are completed before continuing.
             </para>
            </listitem>
@@ -1151,10 +1151,10 @@ kcontext.getKnowledgeRuntime().signalEvent(eventType, data, kcontext.getProcessI
            </listitem>
             <listitem>
               <para>OR or inclusive means that it continues as soon as <emphasis>all direct active paths</emphasis>
-              of its incoming branches has been completed. This is complex merge behaviour that is described
+              of its incoming branches has been completed. This complex merge behaviour is described
               in BPMN2 specification but in most cases it means that OR join will wait for all active flows
               that started in OR split. Some advanced cases (including other gateways in between or repeatable timers)
-              will be causing different "direct active path" calculation. </para>
+              will cause different "direct active path" calculations. </para>
             </listitem>
           </itemizedlist>
         It contains the following properties:
@@ -1262,7 +1262,7 @@ ksession.startProcess("com.sample.hello");</programlisting>
         <listitem><para>Process-level variables can be set when starting a process
         by providing a map of parameters to the invocation of the
         <code>startProcess</code> method.  These parameters will be set as
-        variables on the process scope.</para>
+        variables in the process scope.</para>
         </listitem>
         <listitem><para>Script actions can access variables directly, simply by using the
         name of the variable as a local parameter in their script.  For example, if the process
